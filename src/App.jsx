@@ -2,19 +2,22 @@ import { Container, AppBar, Typography, Grow, Grid2, SpeedDialIcon} from '@mui/m
 
 import Form from "./components/Form/Form.jsx"
 import Posts from './components/Posts/Posts.jsx';
-import memories from "./images/memories.jpg"
+import camera from "./images/photo-camera_9195411.png"
 
 import useStyles from "./styles.js"
 
 function App() {
+
   const classes = useStyles();
 
   return (
     <>
       <Container maxWidth='lg'>
-        <AppBar className={classes.appBar} position='static' color='inherit'>
-          <Typography className={classes.heading} variant='h2' align='center'>Memories</Typography>
-          <img className={classes.image} src={memories} alt="memories" height='60' />
+        <AppBar className={classes.appBar}  position='static' color='inherit'>
+          <Typography className={classes.heading} variant='h2' align='center'>Journal
+            <img className={classes.image} src={camera} alt="memories" height='80'  />
+          </Typography>
+          
         </AppBar>
         <Grow in>
           <Container>
