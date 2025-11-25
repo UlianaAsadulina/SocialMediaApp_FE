@@ -1,12 +1,54 @@
-# React + Vite
+# Social Media App (Frontend)  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal MVP frontend for a MERN social media application built with **React**, **Material UI**, and **Redux**.   
+Features include authentication, posts feed, user profiles, and image uploads.
 
-Currently, two official plugins are available:
+📦 **Backend Repo:** https://github.com/UlianaAsadulina/SocialMediaApp_BE  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## 🚀 Tech Stack
+
+
+- ![React](https://img.shields.io/badge/React-20232A?logo=react)
+- ![Material UI](https://img.shields.io/badge/MUI-007FFF?logo=mui)
+- ![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)
+
+
+---
+
+
+## ⭐ Features
+- 🔐 Login & registration (JWT)
+- 📝 Create posts with text + image
+- 🖼️ Cloudinary file uploads
+- 📰 Feed with all posts
+- 👤 User profile page
+- ⚛️ State managed via Redux slices
+
+
+---  
+
+## 📁 Folder Structure
+```
+client/src
+ ├── assets
+ ├── components
+ ├── images
+ ├── App.jsx
+ ├── index.css
+ ├── main.jsx
+ └── styles.js  
+
+---
+
+👩‍💻 Author  
+
+Uliana Asadulina | MERN Stack Web Developer
+🔗 GitHub: https://github.com/UlianaAsadulina  
+🔗 LinkedIn: https://www.linkedin.com/in/uasadulina  
