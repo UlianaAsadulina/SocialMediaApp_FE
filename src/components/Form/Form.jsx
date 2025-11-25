@@ -1,10 +1,12 @@
-import useStyles from "./styles.js"
- 
-export default function Form () {
-    const classes = useStyles();
-    return ( 
+import { StyledForm } from './styles';
+
+export default function Form() {
+
+    return (
         <h1>
-            Form
+            <StyledForm>
+                Form
+            </StyledForm>        
         </h1>
     )
 };
