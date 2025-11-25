@@ -1,5 +1,4 @@
-import { Container, Grow } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2.jsx';
+import { Container, Grid, Grow } from '@mui/material';
 
 import Form from "./components/Form/Form.jsx"
 import Posts from './components/Posts/Posts.jsx';
@@ -25,14 +24,14 @@ function App() {
         </StyledAppBar>
         <Grow in>
           <Container>
-            <Grid2 container justifyContent="space-between" alignItems="stretch" spacing={3}>
-              <Grid2 item xs={12} sm={7}>
-                <Posts />
-              </Grid2>
-              <Grid2 item xs={12} sm={4}>
-                <Form />
-              </Grid2>
-            </Grid2>
+            <Grid container justifyContent="space-between" alignItems="stretch" spacing={3}>
+  <Grid item xs={12} sm={7}>
+    <Posts />
+  </Grid>
+  <Grid item xs={12} sm={4}>
+    <Form />
+  </Grid>
+</Grid>
           </Container>
         </Grow>
       </Container>
