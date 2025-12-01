@@ -2,13 +2,23 @@ import { Container, Grid, Grow } from '@mui/material';
 
 import Form from "./components/Form/Form.jsx"
 import Posts from './components/Posts/Posts.jsx';
-import camera from "./images/photo-camera_9195411.png"
+import camera from "./images/photo-camera_9195411.png";
+
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+
+import { getPosts } from './actions/posts.js';
 
 import { StyledAppBar, HeadingStyle, ImageStyle } from './styles.js';
+import { use } from 'react';
 
 function App() {
 
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(getPosts());
+  }, [dispatch]); 
 
   return (
     <>
