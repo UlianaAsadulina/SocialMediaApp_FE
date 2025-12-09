@@ -12,9 +12,12 @@ export const getPosts = () => async (dispatch) => {
     }
 };
 
-export const createPost = (post) => async (dispatch) => {
+export const createPost = (formData) => async (dispatch) => {
     try {
-        const { data } = await api.createPost(post);
+        // When sending FormData, the browser automatically sets the correct 
+        // 'Content-Type' header ('multipart/form-data'), so we don't need 
+        // to set it manually here.
+        const { data } = await api.createPost(formData);
 
         dispatch({ type: CREATE, payload: data });
     } catch (error) {
@@ -22,9 +25,9 @@ export const createPost = (post) => async (dispatch) => {
     }
 };
 
-export const updatePost = (id, post) => async (dispatch) => {
+export const updatePost = (id, formData) => async (dispatch) => {
     try {
-        const { data } = await api.updatePost(id, post);
+        const { data } = await api.updatePost(id, formData);
 
         dispatch({ type: UPDATE, payload: data });
     } catch (error) {
