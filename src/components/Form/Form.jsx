@@ -50,10 +50,7 @@ export default function Form({ currentId, setCurrentId }) {
             formData.append('selectedFile', selectedFile);
         }
 
-        // In your Redux action (createPost/updatePost), you will need to handle 
-        // the FormData object and send it to your backend with the file.
-
-        if (currentId === 0) {
+        if (currentId == 0) {
             // Pass the FormData object to the action
             dispatch(createPost(formData));
         } else {
@@ -62,6 +59,7 @@ export default function Form({ currentId, setCurrentId }) {
         }
 
         clear();
+ 
     };
 
     const handleFileChange = (e) => {
