@@ -28,7 +28,7 @@ export default function Post ({ post, setCurrentId }) {
         
         <StyledCard elevation={6}>            
             <StyledCardMedia
-                image={post.selectedFile || '\src\images\photo-camera_9195411.png'}
+                image={post.selectedFile}
                 title={post.title}
             />
             <OverlayBox sx={{ top: 20, left: 20 }}>

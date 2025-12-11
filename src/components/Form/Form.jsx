@@ -51,12 +51,13 @@ export default function Form({ currentId, setCurrentId }) {
         }
         console.log(currentId)
         console.log(postData);
+        console.log(formData);
         if (currentId === 0) {
             // Pass the FormData object to the action
             dispatch(createPost(formData));
         } else {
             // Pass the ID and the FormData object to the action
-            dispatch(updatePost(currentId, formData));
+            dispatch(updatePost(currentId, postData));
         }
 
         clear();
@@ -128,14 +129,15 @@ export default function Form({ currentId, setCurrentId }) {
                 />
 
                 {/* File Input for Cloudinary Upload */}
-                <div style={{ width: '97%', margin: '10px 0 0 0' }}>
+                 {currentId ? "File can't be changed": <div style={{ width: '97%', margin: '10px 0 0 0' }}>
+                
                     <input
                         id="file-input-cloudinary"
                         type="file"
                         onChange={handleFileChange}
                         style={{ width: '100%' }}
                     />
-                </div>
+                </div>}
 
                 <Button
                     sx={{ marginBottom: '10px', marginTop: '10px' }}

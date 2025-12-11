@@ -25,9 +25,11 @@ export const createPost = (formData) => async (dispatch) => {
     }
 };
 
-export const updatePost = (id, formData) => async (dispatch) => {
+export const updatePost = (id, post) => async (dispatch) => {
     try {
-        const { data } = await api.updatePost(id, formData);
+        console.log("Update:", id, post);
+        const { data } = await api.updatePost(id, post);
+        console.log("Payload: ", data);
 
         dispatch({ type: UPDATE, payload: data });
     } catch (error) {
@@ -47,6 +49,7 @@ export const likePost = (id) => async (dispatch) => {
 
 export const deletePost = (id) => async (dispatch) => {
     try {
+        console.log("deleting post ", id);
         await api.deletePost(id);
 
         dispatch({ type: DELETE, payload: id });
