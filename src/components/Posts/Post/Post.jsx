@@ -52,7 +52,7 @@ export default function Post ({ post, setCurrentId }) {
             
             <DetailsBox>
                 <Typography variant="body2" color="textSecondary" component="h2">
-                    {post.tags.map((tag) => `#${tag} `)}
+                    { (post.tags) ? (post.tags.map((tag) => `#${tag} `)) : null}
                 </Typography>
             </DetailsBox>
 

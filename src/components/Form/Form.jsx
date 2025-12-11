@@ -49,8 +49,9 @@ export default function Form({ currentId, setCurrentId }) {
         if (selectedFile) {
             formData.append('selectedFile', selectedFile);
         }
-
-        if (currentId == 0) {
+        console.log(currentId)
+        console.log(postData);
+        if (currentId === 0) {
             // Pass the FormData object to the action
             dispatch(createPost(formData));
         } else {
