@@ -37,9 +37,13 @@ Features include authentication, posts feed, user profiles, and image uploads.
 ## 📁 Folder Structure
 ```
 client/src
+ ├── actions
+ ├── api
  ├── assets
  ├── components
+ ├── constants
  ├── images
+ ├── reducers
  ├── App.jsx
  ├── index.css
  ├── main.jsx
